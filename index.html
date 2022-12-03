@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
+
+        <section id="options">
+            
+                <label for="convertFor">Converter <span>de</span></label>
+                <select name="convertFor">
+                    <option value="brl">
+                        R$ Real Brasileiro
+                    </option>
+                </select>
+                <label for="convertTo">Converter <span>para</span></label>
+                <select name="convertTo" id="currency-select">
+                    <option value="usd">US$ Dólar</option>
+                    <option value="eur">€ Euro</option>
+                    <option value="btc">₿ Bitcoin</option>
+                </select>
+                <label for="value">Valor</label>
+                <input type="text" name="value" id="realValue" placeholder="R$ 10.000,00" />
+                <button id="submit">Converter</button>
+            
+        </section>
+
+        <section id="result">
+            <div>
+                <img src="./assets/real.svg" alt="Brazil-flag" />
+                <p>Real</p>
+                <span id="real-value">R$ 10.000,00</span>
+            </div>
+            <div>
+                <img src="./assets/arrow.svg" alt="Arrow" />
+            </div>
+            <div>
+                <img id="currencyFlag" src="./assets/dolar.svg" alt="Brazil-flag" />
+                <p id="currency-name">Dólar Americano</p>
+                <span id="currencyConverted">US$ 2.000,00</span>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

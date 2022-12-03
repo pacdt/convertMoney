@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    /* --color-primary: #1B83E2; */
+    --color-primary: crimson;
+}
+main{
+    width: 375px;
+    height: 766px;
+    margin: 0 auto;
+    background: #F4F4F4;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+header{
+    background: var(--color-primary);
+    width: 375px;
+    height: 66px;
+    border-radius: 5px 5px 0px 0px;
+}
+header h1{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    color: #F4F4F4;
+    padding-top: 24px;
+}
+section {
+    width: 327px;
+    margin: 0 auto;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+    margin-bottom: 6px;
+}
+label span{
+    font-weight: 700;
+}
+select{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
+    padding: 15px;
+    appearance: none;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    margin-bottom: 23px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+button, input{
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    margin-bottom: 23px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+input::placeholder{
+    font-weight: 100;
+}
+#submit{
+    background: var(--color-primary);
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #F4F4F4;
+    border: none;
+    margin-bottom: 51px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+#submit:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+#submit:active{
+    opacity: 0.7;
+}
+
+section#result{
+    width: 327px;
+    height: 276px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#result div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+}
+section#result div p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+section#result div span{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: var(--color-primary);
+}
+@media screen and (max-width: 400px) {
+    main{
+        margin-top: 7px;
+        width: 98vw;
+    }
+    header{
+        width: 98vw;
+    }
+}
