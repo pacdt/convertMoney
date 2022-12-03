@@ -129,7 +129,7 @@ section#result div span{
     line-height: 18px;
     color: var(--color-primary);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     main{
         margin-top: 7px;
         width: 98vw;
