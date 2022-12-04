@@ -3,7 +3,7 @@ const select = document.getElementById('currency-select');
 
 const dolar = 5.21;
 const euro = 5.49;
-const btc = 88837.91;
+const btc = 88923.01;
 
 const convertValues = () => {
     const realValue = document.getElementById("realValue").value.replace(',', '.');
