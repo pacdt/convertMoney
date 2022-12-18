@@ -1,9 +1,27 @@
 const button = document.getElementById("submit");
 const select = document.getElementById('currency-select');
+let dolar;
+let euro; 
+let btc;
+let eth; 
 
-const dolar = 5.21;
-const euro = 5.49;
-const btc = 88923.01;
+async function getCurrencies (){
+    let req = await fetch('https://brapi.dev/api/v2/currency?currency=USD-BRL%2CEUR-BRL')
+    let json = await req.json();
+    dolar = json.currency[0].high;
+    euro = json.currency[1].high;
+    //console.log(json.currency[0].high)
+}
+getCurrencies()
+async function getCrypto (){
+    let req = await fetch('https://brapi.dev/api/v2/crypto?coin=BTC%2CETH&currency=BRL')
+    let json = await req.json();
+    btc = json.coins[0].regularMarketDayHigh
+    eth = json.coins[1].regularMarketDayHigh
+    console.log(json.coins[1].regularMarketDayHigh)
+}
+getCrypto()
+
 
 const convertValues = () => {
     const realValue = document.getElementById("realValue").value.replace(',', '.');
@@ -33,6 +51,9 @@ const convertValues = () => {
     if(select.value === 'btc'){
         currencyConverted.innerHTML = '₿ ' + (realValue / btc).toFixed(6);
     }
+    if(select.value === 'eth'){
+        currencyConverted.innerHTML = 'Ξ ' + (realValue / eth).toFixed(6);
+    }
 };
 
 const changeCurrency = () => {
@@ -50,7 +71,10 @@ const changeCurrency = () => {
         currencyName.innerHTML = "Bitcoin"
         currencyFlag.src = './assets/bitcoin.svg'
     }
-    
+    if(select.value == 'eth'){
+        currencyName.innerHTML = "Ethereum"
+        currencyFlag.src = 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'
+    }
 
     convertValues()
 }

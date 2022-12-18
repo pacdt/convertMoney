@@ -13,6 +13,9 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(220, 20, 60, 0.4) ), url('./assets/bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 main{
     width: 375px;
