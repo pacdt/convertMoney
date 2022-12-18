@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Conversor de Moedas é um projeto que mostra a conversão da Moeda Real (R$) para 4 opções, como Dólar Americano (US$), Euro (EUR), Bitcoin (BTC) e Ethereum (ETH). Onde utilizamos o HTML como base, CSS para dar o visual e o JavaScript para deixar o projeto dinâmico e com o uso da API da [Brapi] (https://brapi.dev/) para pegar os valores atualizados, tal como utilizar o Select para fazer todas as alterações como bandeira, nome da moeda e o cálculo de acordo com a moeda escolhida. Utilizamos também o addEventListener para obter as ações do botão e do select. 
+O Conversor de Moedas é um projeto que mostra a conversão da Moeda Real (R$) para 4 opções, como Dólar Americano (US$), Euro (EUR), Bitcoin (BTC) e Ethereum (ETH). Onde utilizamos o HTML como base, CSS para dar o visual e o JavaScript para deixar o projeto dinâmico e com o uso da API da <a href="https://brapi.dev/" target="_blank"> Brapi </a> para pegar os valores atualizados, tal como utilizar o Select para fazer todas as alterações como bandeira, nome da moeda e o cálculo de acordo com a moeda escolhida. Utilizamos também o addEventListener para obter as ações do botão e do select. 
 
 ## 🔖 Layout
 
